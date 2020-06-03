@@ -1,0 +1,76 @@
+window.onload = function(){
+    document.getElementById("submit").addEventListener("submit", function() {
+      var form = document.forms["myform"];
+      var fname = form["firstName"].value;
+      var lname = form["lastName"].value;
+      var cemail = form["contactemail"].value;
+      var telephone = form["telephone"].value;
+      var option = form["select"].value;
+      var check1 = form["check1"].value;
+      var check2 = form["check2"].value;
+      var check3 = form["check3"].value;
+      var check4 = form["check4"].value;
+      var depart1 = form["depart"].value;
+      var depart2 = form["arrival"].value;
+      var comment = form["comment"].value;
+      if (fname == "") {
+        alert("fill in your First Name");
+        e.preventDefault();
+        return false;
+      }
+
+      if (lname == "") {
+        alert("Fill in your Last Name ");
+        e.preventDefault();
+        return false;
+      }
+      if (telephone == "") {
+        alert("Fill in your telephone");
+        e.preventDefault();
+        return false;
+      }
+      if (option == "") {
+        alert("select options ");
+        e.preventDefault();
+        return false;
+      }
+      if (check1 == "") {
+        alert("Fill in the check ");
+        e.preventDefault();
+        return false;
+      }
+      if (check2 == "") {
+        alert("Fill in the check");
+        e.preventDefault();
+        return false;
+      }
+      if (check3 == "") {
+        alert("Fill in the check");
+        e.preventDefault();
+        return false;
+      }
+      if (check4 == "") {
+        alert("Fill in the check");
+        e.preventDefault();
+        return false;
+      }
+      if (depart1 == "") {
+        alert("select  your depart Date");
+        e.preventDefault();
+        return false;
+      }
+      if (depart2 == "") {
+        alert("select your arrival Date ");
+        e.preventDefault();
+        return false;
+      }
+      if (comment  == "") {
+        alert("PLease give us your option");
+        e.preventDefault();
+        return false;
+      }
+
+    })
+
+
+  }
