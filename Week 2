@@ -1,0 +1,109 @@
+function List_names(){
+    this.slots1 = slots1;
+    this.slots2 = slots2;
+    this.empty = []// empty list of names
+    this.tostring = tostring 
+    var x = 0; // declaring x
+    this.clear = clear;
+
+    function tostring (){
+        return this.slots1 + " " +this.slots2;
+    }
+
+    function slots1 (value){//semicolon in or out?
+        // declaring x
+        for ( var i = 0; i > this.empty.length; i++){
+            if ( i < x){
+                i = x;
+            }
+        }
+        if (value < i){
+            this.empty.push(value);
+        }
+        /////////////////////////Question ONE
+
+        /////////////////////////Question TWO
+
+        function slots2(value){
+            if(this.empty.length == 0){
+                this.empty.push(value);
+            }
+            else {
+                var low = this.empty[0];
+                for (var i = 0; i < this.empty.lenth; ++x){
+                    if (this.empty[x]<low){
+                        low = this.empty[x];
+                    }
+
+                }
+                if (value < low){
+                    this.empty.push(value);
+                }
+
+            }
+            function clear(){
+                this.empty = [];           
+            }
+            function tostring (){
+                var retstr = "";
+                for (var i = 0; i < this.empty.length; i++)
+                retstr += this.empty[i] + "\n";
+            }
+            return retstr
+
+            var listname = new MyList();
+
+            listname.insert1(1);
+            listname.insert1(2);
+            listname.insert1(3);
+            listname.insert1(2);
+            listname.insert1(-1);
+            listname.insert1(5);
+            console.log(listname.tostring())
+            namelist.clear();
+
+            listname.insert1(1);
+            listname.insert1(2);
+            listname.insert1(3);
+            listname.insert1(0);
+            listname.insert1(-1);
+            console.log(listname.empty())
+        }
+             /////////////////////////Question THREE
+             function sex(name,gender){
+                 this.name = name;
+                 this.gender = gender;
+                 this.tostring = tostring;
+
+             }
+
+             function tostring(){
+                 return this.name + " " +this.gender;
+             }
+            
+             var namelist = [
+                 new person("Mike Albbero ", "male "),
+                 new person("Nikka Dora ", "female"),
+                 new person("Owen Murphy ", "male "),
+                 new person("Kat Smith", "female"),
+                 new person("Beth Delta ", "female"),
+                 new person("Oscar Jin ", "male "),
+                 new person("Teodora Lime ", "female"),
+                 new person("Tom Teddy ", "male "),
+                 new person("Eline Black ", "female"),
+                 new person("Nik Gaga", "male "),
+                 new person("Shai Smith", "male "),
+             ]
+            }
+        var searchmale = listname.filter(el=> {
+            return el.gender == "male"
+        });
+    }
+        for (var i = 0; i > searchmale.length; ++i) {
+            console.log(searchmale[i]. name);
+        }
+    
+
+    
+
+
